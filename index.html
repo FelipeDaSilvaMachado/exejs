@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssindex.css">
+    <title>Exercício JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Operações Matemáticas Básicas com Javascript.
+        </h1>
+        <br>
+        <hr>
+    </header>
+    <form name="formSoma">
+        <div class="divForm">
+            <label for="valor1">Digite um valor numérico: </label>
+            <input type="text" id="valor1" name="valor1" placeholder="Digite o primeiro valor" autofocus>
+            <label for="valor2">Digite outro valor numérico: </label>
+            <input type="text" id="valor2" name="valor2" placeholder="Digite o segundo valor">
+            <div class="resultado">
+                <button type="button" onclick="somarValores()" value="somar">
+                    Somar
+                </button>
+                <label for="resSoma">O resultado é: </label>
+                <output name="resSoma" id="resSoma"></output>
+            </div>
+        </div>
+    </form>
+    <form name="formSub">
+        <div class="divForm">
+            <label for="valor1">Digite um valor numérico: </label>
+            <input type="text" id="valor1" name="valor1" placeholder="Digite o primeiro valor">
+            <label for="valor2">Digite outro valor numérico: </label>
+            <input type="text" id="valor2" name="valor2" placeholder="Digite o segundo valor">
+            <div class="resultado">
+                <button type="button" onclick="subtrairValores()">
+                    Subtrair
+                </button>
+                <label for="resSub">O resultado é: </label>
+                <output name="resSub" id="resSub"></output>
+            </div>
+        </div>
+    </form>
+    <form name="formMult">
+        <div class="divForm">
+            <label for="valor1">Digite um valor numérico: </label>
+            <input type="text" id="valor1" name="valor1" placeholder="Digite o primeiro valor">
+            <label for="valor2">Digite outro valor numérico: </label>
+            <input type="text" id="valor2" name="valor2" placeholder="Digite o segundo valor">
+            <div class="resMultiplicacao">
+                <button type="button" onclick="multiplicarValores()">
+                    Multiplicar
+                </button>
+                <label for="resMult">O resultado é: </label>
+                <output name="resMult" id="resMult"></output>
+            </div>
+        </div>
+    </form>
+    <form name="formDiv">
+        <div class="divForm">
+            <label for="valor1">Digite um valor numérico: </label>
+            <input type="text" id="valor1" name="valor1" placeholder="Digite o primeiro valor">
+            <label for="valor2">Digite outro valor numérico: </label>
+            <input type="text" id="valor2" name="valor2" placeholder="Digite o segundo valor">
+            <div class="resDivisao">
+                <button type="button" onclick="dividirValores()">
+                    Dividir
+                </button>
+                <label for="resDiv">O resultado é: </label>
+                <output name="resDiv" id="resDiv"></output>
+            </div>
+        </div>
+    </form>
+    <div class="calNovam">
+        <a href="index.html">
+            <button type="button">Calcular Novamente</button>
+        </a>
+        <a href="imc.html">
+            <button type="button">Calcular IMC</button>
+        </a>
+    </div>
+    <script src="js/jsindex.js" defer></script>
+</body>
+
+</html>

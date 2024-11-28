@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssimc.css">
+    <title>Exercício JS</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Operações Matemáticas Básicas com Javascript.
+        </h1>
+        <br>
+        <hr>
+    </header>
+    <form name="formIMC">
+        <div class="divForm">
+            <label for="peso">Digite seu peso: </label>
+            <input type="text" id="peso" name="peso" placeholder="Digite seu peso">
+            <label for="altura">Digite sua altura em cm: </label>
+            <input type="text" id="altura" name="altura" placeholder="Digite sua altura em cm">
+            <div class="resIMC">
+                <button type="button" onclick="calcIMC()">
+                    Calcular o IMC
+                </button>
+                <label for="resIMC">Seu IMC é: </label>
+                <output name="resIMC" id="resIMC"></output>
+            </div>
+        </div>
+    </form>
+    <div class="calNovam">
+        <a href="index.html">
+            <button type="button">Pagina Inicial</button>
+        </a>
+        <a href="imc.html">
+            <button type="button">Calcular Novamente</button>
+        </a>
+    </div>
+    <script src="js/jsimc.js" defer></script>
+</body>
+
+</html>
